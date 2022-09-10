@@ -38,7 +38,7 @@ export default function ProRentCard({
 
   useEffect(() => {
     getReview();
-  });
+  },);
 
   const PostDelete = async (post_id: any) => {
     const { data, error } = await supabase
@@ -92,7 +92,7 @@ export default function ProRentCard({
             borderWidth="1px"
             borderRadius="lg"
             w={"100%"}
-            height={"35vh"}
+            height={"45vh"}
             direction={{ base: "column", md: "row" }}
             bg={useColorModeValue("white", "gray.900")}
             boxShadow={"lg"}
@@ -175,7 +175,7 @@ export default function ProRentCard({
                 fontWeight: "bold",
               }}
             >
-              Approveed
+              Approved
             </Button>
           ) : (
             <Stack direction={"row"} flex={1}>
